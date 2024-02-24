@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "xyz.starchenpy.cleargpucache.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cleargpucache.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "ClearGpuCacheMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
