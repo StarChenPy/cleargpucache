@@ -1,6 +1,6 @@
 package xyz.starchenpy.cleargpucache;
 
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.fml.common.Mod;
 
 @Mod(ClearGpuCache.MODID)
 public class ClearGpuCache {
