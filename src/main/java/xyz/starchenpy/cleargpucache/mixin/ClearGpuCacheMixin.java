@@ -16,7 +16,7 @@ public class ClearGpuCacheMixin {
     @Shadow
     private Minecraft minecraft;
 
-    @Inject(at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/LevelRenderer;compileChunks(Lnet/minecraft/client/Camera;)V", shift = At.Shift.AFTER, by = 1), method = "renderLevel")
+    @Inject(at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/LevelRenderer;compileChunks(Lnet/minecraft/client/Camera;)V", shift = At.Shift.BY, by = 2), method = "renderLevel")
     public void renderLevelMixin(CallbackInfo ci){
         this.minecraft.getProfiler().popPush("finish");
         GL11.glFinish();
